@@ -29,7 +29,7 @@ To use SQLite in your project, add `pod 'sqlite3'` to your Podfile. However, as 
 - [Enhanced ANALYZE and query planner (STAT3)](https://sqlite.org/compile.html#enable_stat3): `pod 'sqlite3/stat3'`
 - [Further enhanced ANALYZE and query planner (STAT4)](https://sqlite.org/compile.html#enable_stat4): `pod 'sqlite3/stat4'`
 - [Unlock-Notify API](https://www.sqlite.org/unlock_notify.html): `pod 'sqlite3/unlock_notify'`
-
+- [ICU International Components for Unicode](https://www.sqlite.org/src/artifact?ci=trunk&filename=ext/icu/README.txt): `pod 'sqlite3/icu'`
 
 ## License
 

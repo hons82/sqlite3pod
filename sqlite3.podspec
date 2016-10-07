@@ -53,6 +53,13 @@ LICENSE
     ss.pod_target_xcconfig = { 'OTHER_CFLAGS' => '$(inherited) -DSQLITE_ENABLE_FTS5=1' }
   end
 
+  # enable support for icu - International Components for Unicode
+  s.subspec 'icu' do |ss|
+    ss.dependency 'sqlite3/common'
+    ss.pod_target_xcconfig = { 'OTHER_CFLAGS' => '$(inherited) -DSQLITE_ENABLE_ICU=1' }
+    ss.libraries = 'icucore'
+  end
+
   # JSON1 extension for managing JSON content
   s.subspec 'json1' do |ss|
     ss.dependency 'sqlite3/common'
@@ -112,4 +119,5 @@ LICENSE
     ss.dependency 'sqlite3/common'
     ss.pod_target_xcconfig = { 'OTHER_CFLAGS' => '$(inherited) -DSQLITE_ENABLE_UNLOCK_NOTIFY=1' }
   end
+  
 end
